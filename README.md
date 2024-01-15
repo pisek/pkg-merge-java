@@ -7,8 +7,10 @@ Put all `..._<PKG_NUMBER>.pkg` files in one folder.
 
 Run the app with:
 
-`java -jar pkg-merge-java.jar <PKG_DIRECTORY_PATH>`
+`java -jar pkg-merge-java.jar <PKG_DIRECTORY_PATH> [OUTPUT_DIR_OR_OUTPUT_FILE_PATH]`
 
-eg. `java -jar pkg-merge-java.jar C:\myPkgFolder`
+eg. `java -jar pkg-merge-java.jar /home/me/myPkgFolder`
 
-App will merge `..._0.pkg`, `..._1.pkg` ... files into `merged.pkg` file.
+App will merge `..._0.pkg`, `..._1.pkg` ... files into `<PKG_DIRECTORY_PATH>/merged.pkg` file.
+
+When used with second parameter, output will be saved to `OUTPUT_DIR_OR_OUTPUT_FILE_PATH`

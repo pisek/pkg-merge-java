@@ -9,8 +9,20 @@ Run the app with:
 
 `java -jar pkg-merge-java.jar <PKG_DIRECTORY_PATH> [OUTPUT_DIR_OR_OUTPUT_FILE_PATH]`
 
-eg. `java -jar pkg-merge-java.jar /home/me/myPkgFolder`
+Example:
 
-App will merge `..._0.pkg`, `..._1.pkg` ... files into `<PKG_DIRECTORY_PATH>/merged.pkg` file.
+`java -jar pkg-merge-java.jar /home/me/myPkgFolder`
 
-When used with second parameter, output will be saved to `OUTPUT_DIR_OR_OUTPUT_FILE_PATH`
+will merge `..._0.pkg`, `..._1.pkg` ... files into `/home/me/myPkgFolder/merged.pkg` file
+
+Example 2:
+
+`java -jar pkg-merge-java.jar /home/me/myPkgFolder /home/me/someOtherFolder`
+
+will merge `..._0.pkg`, `..._1.pkg` ... files into `/home/me/someOtherFolder/merged.pkg` file
+
+Example 3:
+
+`java -jar pkg-merge-java.jar /home/me/myPkgFolder /home/me/someOtherFolder/mypkg.pkg`
+
+will merge `..._0.pkg`, `..._1.pkg` ... files into `/home/me/someOtherFolder/mypkg.pkg` file

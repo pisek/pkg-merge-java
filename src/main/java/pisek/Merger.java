@@ -16,7 +16,7 @@ public class Merger {
         File outFile = resolveOutFile(args, dir);
 
         Files.walk(dir)
-                .filter(path -> path.toString().endsWith(".pkg"))
+                .filter(path -> path.toString().toLowerCase().endsWith(".pkg"))
                 .sorted()
                 .forEach(f -> {
                     try (FileOutputStream out = new FileOutputStream(outFile, true)) {
